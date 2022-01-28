@@ -4,7 +4,7 @@ const fs = require('fs');
 const vec3 = require('vec3');
 
 const settings = JSON.parse(fs.readFileSync('./settings.json', 'utf8'));
-const mcdata = require("minecraft-data")('1.16.4');
+const mcdata = require("minecraft-data")('1.8.9');
 
 const bots = [];
 const structures = [];
@@ -19,7 +19,7 @@ function createBot() {
     let bot = mineflayer.createBot({
         username: `TestMachine_${bots.length}`,
         server: "localhost",
-        version: "1.16.4",
+        version: "1.8.9",
 		port: 50017,
     });
     
